@@ -1,0 +1,2 @@
+gpt prompt PORTFOLIO BRUNO
+“Vamos continuar o projeto do portfólio com Supabase”

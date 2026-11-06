@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Gomes — Designer Gráfico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <!-- Top Minimal Loading Indicator -->
+  <div id="loader" class="loader">
+    <div id="loader-bar" class="loader-bar"></div>
+  </div>
+
+  <!-- Pinned Fullscreen Canvas Scroll Animation (Background) -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Foreground Content Layers -->
+  <div class="content-wrapper">
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#home" class="brand-logo">
+          <div class="brand-logo">
+              <img src="logo.png" alt="Bruno Gomes Logo" width="40" height="40">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">BRUNO GOMES</span>
+            <span class="brand-tag">DESIGNER GRÁFICO</span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#home" class="nav-link active">HOME<span class="nav-dot"></span></a>
+          <a href="#about" class="nav-link">SOBRE</a>
+          <a href="#services" class="nav-link">SERVIÇOS</a>
+          <a href="#work" class="nav-link">TRABALHOS</a>
+          <a href="#experience" class="nav-link">EXPERIENCIA</a>
+          <a href="#contact" class="nav-link">CONTATO</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn-collaborate">COLABORE</a>
+          <button class="menu-btn" aria-label="Toggle Menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-text">MOTION DESIGN QUE</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">MOVENDO</span>
+            <span class="title-line">IDEIAS.</span>
+          </h1>
+          <p class="hero-desc">
+            Crio Indentidades visuais e motion graphics cinematográficos que cativam, comunicam e deixam um impacto duradouro.
+          </p>
+          <div class="hero-cta">
+            <a href="#work" class="btn-view-work">
+              <span class="play-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <span class="btn-text">VEJAM MEUS TRABALHOS</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-side-badge">
+          <div class="badge-item">CRIAÇÃO</div>
+          <div class="badge-dot"></div>
+          <div class="badge-item">ANIMAÇÃO</div>
+          <div class="badge-dot"></div>
+          <div class="badge-item">INSPIRAÇÃO</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-left-accent">
+            <div class="circular-dial">
+              <div class="dial-inner">
+                <div class="dial-glow"></div>
+                <div class="dial-marker"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-main">
+            <span class="section-pill-tag">SOBRE MIM</span>
+            <h2 class="about-heading">
+              Sou Bruno Gomes, Designer Gráfico e motion designer.
+            </h2>
+            <p class="about-text">
+              Com formação em CGI e paixão por design, ajudo marcas e agências a se comunicarem com clareza, emoção e estilo. Cada projeto que crio é feito com propósito e diversão.
+            </p>
+            <a href="#experience" class="btn-pill-outline">
+              <span>MAIS SOBRE MIM</span>
+              <span class="arrow-circle">→</span>
+            </a>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">8+</div>
+              <div class="stat-label">TEMPO DE EXPERIÊNCIA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">120+</div>
+              <div class="stat-label">PPROJETOS CONCLUÍDOS</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">45+</div>
+              <div class="stat-label">CLIENTES SATISFEITOS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Warm Cream Palette) -->
+    <section id="services" class="services-section">
+      <div class="section-container">
+        <div class="services-wrapper">
+          <div class="section-divider-header light">
+            <span class="divider-dash">—</span>
+            <span class="divider-title">SERVIÇOS</span>
+            <span class="divider-dash">—</span>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-col">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2v3m0 14v3M2 12h3m14 0h3m-3.5-6.5l-2.1 2.1m-8.8 8.8l-2.1 2.1m13 0l-2.1-2.1m-8.8-8.8l-2.1-2.1"/>
+                </svg>
+              </div>
+              <h3 class="service-title">PROJETO GRÁFICO</h3>
+              <p class="service-desc">Projetos envolventes que dão vida a ideias, marcas e histórias</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-col">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+              <h3 class="service-title">IDENTIDADE VISUAL</h3>
+              <p class="service-desc">Sistemas de identidade com movimento e significado.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-col">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9"/>
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 3a9 9 0 0 1 8.5 6L14.7 11M3.5 9A9 9 0 0 1 9 3.5L11 9.3M20.5 15A9 9 0 0 1 15 20.5L13 14.7M3.5 15A9 9 0 0 0 9 20.5L9.3 14.7"/>
+                </svg>
+              </div>
+              <h3 class="service-title">MOTION GRAPHICS</h3>
+              <p class="service-desc">Narrativa cinematográfica que eleva sua marca e cria conexão.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-col">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <h3 class="service-title">EDIÇÃO DE VIDEOS</h3>
+              <p class="service-desc">Vídeos claros e atraentes que simplificam conceitos complexos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Experience Section -->
+    <section id="experience" class="skills-section">
+      <div class="section-container">
+        <div class="skills-grid">
+          <!-- Left: Skills Progress Bars -->
+          <div class="skills-col">
+            <h2 class="section-subheading">SKILLS & EXPERIENCIA</h2>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">AFTER EFFECTS</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PHOTOSHOP</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PREMIERE PRO</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">ILLUSTRATOR</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">FIGMA</span>
+                  <span class="skill-pct">60%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Process & Strategy Flow -->
+          <div class="process-col">
+            <p class="process-desc">
+              Anos de experiência prática em diferentes setores e plataformas moldaram meu jeito de contar histórias — unindo criatividade e estratégia.
+            </p>
+            
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 18h6m-4 4h2m3-13a6 6 0 1 0-8 0c1 1 1 2 1 3h6c0-1 0-2 1-3z"/>
+                  </svg>
+                </div>
+                <span class="step-name">IDEAÇÃO</span>
+              </div>
+              <div class="step-connector"></div>
+
+              <div class="process-step">
+                <div class="step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+                  </svg>
+                </div>
+                <span class="step-name">DESIGN</span>
+              </div>
+              <div class="step-connector"></div>
+
+              <div class="process-step">
+                <div class="step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                </div>
+                <span class="step-name">ANIMAÇÃO</span>
+              </div>
+              <div class="step-connector"></div>
+
+              <div class="process-step">
+                <div class="step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <span class="step-name">ENTREGA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Motion Projects Section -->
+    <section id="work" class="projects-section">
+      <div class="section-container">
+        <div class="projects-header">
+          <div class="section-divider-header dark">
+            <span class="divider-dash">—</span>
+            <span class="divider-title">TRABALHOS EM DESTAQUE</span>
+            <span class="divider-dash">—</span>
+          </div>
+          <a href="trabalhos.html" class="btn-view-all">
+            <span>VER TODOS OS TRABALHOS</span>
+            <span class="arrow-badge">→</span>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Crachá SUS -->
+          <div class="project-card" data-title="CRACHÁ INSTITUCIONAL" data-category="Identidade Visual & Papelaria" data-src="works/work-cracha-sus.png">
+            <div class="project-thumb">
+              <img src="works/work-cracha-sus.png" alt="Crachá Institucional SUS - Dr. Rafael Lima" class="project-img" loading="lazy">
+              <div class="thumb-overlay"></div>
+              <div class="play-btn-badge" title="Visualizar projeto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">CRACHÁ INSTITUCIONAL</h4>
+              <span class="project-category">Identidade Visual & Papelaria</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Colégio Astro -->
+          <div class="project-card" data-title="COLÉGIO ASTRO" data-category="Campanha & Social Media" data-src="works/work-astro-colegio.png">
+            <div class="project-thumb">
+              <img src="works/work-astro-colegio.png" alt="Flyer Promocional Astro Colégio e Curso" class="project-img" loading="lazy">
+              <div class="thumb-overlay"></div>
+              <div class="play-btn-badge" title="Visualizar projeto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">COLÉGIO ASTRO</h4>
+              <span class="project-category">Campanha & Social Media</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Bruno Gomes 2024 -->
+          <div class="project-card" data-title="BRUNO GOMES 2024" data-category="Motion & Key Visual" data-src="works/work-bruno-gomes.png">
+            <div class="project-thumb">
+              <img src="works/work-bruno-gomes.png" alt="Pôster Bruno Gomes - Design & Video & Motion 2024" class="project-img" loading="lazy">
+              <div class="thumb-overlay"></div>
+              <div class="play-btn-badge" title="Visualizar projeto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">BRUNO GOMES 2024</h4>
+              <span class="project-category">Motion & Key Visual</span>
+            </div>
+          </div>
+
+          <!-- Project 4: All Hype -->
+          <div class="project-card" data-title="ALL HYPE" data-category="Streetwear & Direção de Arte" data-src="works/work-all-hype.jpg">
+            <div class="project-thumb">
+              <img src="works/work-all-hype.jpg" alt="Cartaz All Hype - O que há de mais intenso" class="project-img" loading="lazy">
+              <div class="thumb-overlay"></div>
+              <div class="play-btn-badge" title="Visualizar projeto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">ALL HYPE</h4>
+              <span class="project-category">Streetwear & Direção de Arte</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Sonic 2 The Hedgehog -->
+          <div class="project-card" data-title="SONIC 2" data-category="Pôster Cinematográfico" data-src="works/work-sonic-2.png">
+            <div class="project-thumb">
+              <img src="works/work-sonic-2.png" alt="Pôster Cinematográfico Sonic 2 The Hedgehog" class="project-img" loading="lazy">
+              <div class="thumb-overlay"></div>
+              <div class="play-btn-badge" title="Visualizar projeto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">SONIC 2</h4>
+              <span class="project-category">Pôster Cinematográfico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kind Words (Testimonials) Section -->
+    <section class="testimonials-section">
+      <div class="section-container">
+        <div class="section-divider-header dark center">
+          <span class="divider-dash">—</span>
+          <span class="divider-title">COMENTÁRIOS</span>
+          <span class="divider-dash">—</span>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="quote-symbol">“</div>
+            <p class="quote-text">
+              Bruno traz não só talento, mas também coração e visão para cada projeto. Um verdadeiro colaborador.
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-1">LM</div>
+              <div class="author-details">
+                <h5 class="author-name">LISA MORGAN</h5>
+                <span class="author-role">Creative Director, Shift Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="quote-symbol">“</div>
+            <p class="quote-text">
+              As animações estavam incríveis e elevaram toda a nossa campanha. Não poderia estar mais feliz!
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-2">DR</div>
+              <div class="author-details">
+                <h5 class="author-name">DANIEL REEVES</h5>
+                <span class="author-role">Marketing Lead, Elevate Co.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="quote-symbol">“</div>
+            <p class="quote-text">
+              Profissional, rápido e incrivelmente criativo. Bruno sempre entrega além das expectativas.
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-3">JO</div>
+              <div class="author-details">
+                <h5 class="author-name">JAMES O'CONNOR</h5>
+                <span class="author-role">Founder, MotionLab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Have a Project in Mind (CTA Banner) -->
+    <section id="contact" class="cta-section">
+      <div class="section-container">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <h2 class="cta-heading">TEM UM PROJETO EM MENTE?</h2>
+            <p class="cta-sub">Vamos criar algo que mova as pessoas.</p>
+          </div>
+          <div class="cta-action">
+            <a href="mailto:hello@romykeane.com" class="btn-cta-contact">
+              <span>ENTRE EM CONTATO</span>
+              <span class="cta-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="section-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand -->
+          <div class="footer-col brand-col">
+            <div class="brand-logo footer-logo">
+              
+                <img src="logo.png" alt="Bruno Gomes Logo" width="40" height="40">
+              
+              <div class="brand-text">
+                <span class="brand-name">BRUNO GOMES</span>
+                <span class="brand-tag">DESIGNER GRÁFICO</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Cria, Anima, Inspira.</p>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div class="footer-col">
+            <h6 class="footer-col-title">NAVEGAÇÃO</h6>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#work">Trabalhos</a></li>
+              <li><a href="#experience">Experiencia</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Services -->
+          <div class="footer-col">
+            <h6 class="footer-col-title">SERVIÇOS</h6>
+            <ul class="footer-links">
+              <li><a href="#services">Motion Graphics</a></li>
+              <li><a href="#services">Eição de Vídeos</a></li>
+              <li><a href="#services">Projeto Gráfico</a></li>
+              <li><a href="#services">Identidade Visual</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Info -->
+          <div class="footer-col">
+            <h6 class="footer-col-title">INFO</h6>
+            <ul class="footer-info-list">
+              <li>brunogomesdsgn@gmail.com</li>
+              <li>+55 81 98510-8480</li>
+              <li>Recife, Brazil</li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Connect -->
+          <div class="footer-col connect-col">
+            <h6 class="footer-col-title">VAMOS CONECTAR</h6>
+            <div class="social-links">
+              <a href="#" class="social-circle" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-circle" title="behance">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.8 7.4c-.1 2.3-1.7 5.4-4.8 9.3-3.2 4.1-5.9 6.1-8.1 6.1-1.4 0-2.5-1.3-3.4-3.8l-1.9-6.9c-.7-2.6-1.5-3.9-2.4-3.9-.2 0-.9.4-2.1 1.2L0 8.3c1.3-1.1 2.5-2.3 3.8-3.4 1.7-1.5 3-2.3 3.9-2.4 2.2-.2 3.6 1.3 4.1 4.5.6 3.8 1 6.2 1.2 7.2.7 3.3 1.5 5 2.5 5 .8 0 1.9-1.2 3.3-3.5 1.4-2.3 2.1-4.1 2.1-5.2 0-1.8-1-2.7-3.1-2.7-.9 0-1.8.2-2.7.6 1.9-6.1 5.5-9.1 10.8-8.9 3.9.1 5.8 2.7 5.7 7.9z"/></svg>
+              </a>
+              <a href="#" class="social-circle" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-circle" title="Dribbble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"/><path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"/><path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Bruno Gomes. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Lightbox Modal for Works Preview -->
+  <div id="works-lightbox" class="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fechar visualização">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="lightbox-media-wrapper">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Projeto ampliado">
+      </div>
+      <div class="lightbox-info">
+        <h3 id="lightbox-title" class="lightbox-title"></h3>
+        <p id="lightbox-category" class="lightbox-category"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
